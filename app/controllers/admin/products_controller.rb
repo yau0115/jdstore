@@ -23,7 +23,7 @@ before_action :admin_required
     if @product.update(product_params)
       redirect_to admin_products_path
     else
-      redner :edit
+      render :edit
     end
   end
 
